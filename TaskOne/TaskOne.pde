@@ -1,25 +1,25 @@
 String setString;
-String name;
+String name;         //declaring global variables
 int age;
 
 
-void setup(){
-  firstMethod();
+void setup(){   // callling methods
+  firstMethod();   
   secondMethod("Hello from second method");
   thirdMethod("Benjamin", 31);
 }
 
-void firstMethod(){  //Task 1.a and 1.b
+void firstMethod(){  // method for task 1.a and 1.b
   println("Hello from first method");
 }
 
-String secondMethod(String setString){  //task 1.c 
+String secondMethod(String setString){  //method for task 1.c 
   this.setString = setString;
   println(setString);
   return(setString);
 }
 
-String thirdMethod(String name, int age){ //task 1.d
+String thirdMethod(String name, int age){ //method for task 1.d
   this.name = name;
   this.age = age;
   println("My name is " + name + ", I am " + age + " years old");
